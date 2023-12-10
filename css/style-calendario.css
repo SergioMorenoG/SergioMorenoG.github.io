@@ -1,0 +1,176 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #192929;
+    color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: rgb(182, 41, 41);
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-right: 3px solid white;
+    padding-inline-end: 738px;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+} 
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a {
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:visited {
+    color: rgb(207, 180, 70)
+}
+
+nav a:active {
+    color: aqua;
+}
+
+.banner {
+    min-height: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: url(imgs-css/fondo-circutios.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    border: 5px solid black;
+}
+
+.banner-texto {
+    color: rgb(181, 29, 29);
+    text-shadow: 10px 10px 5px white;
+    font-size: 55px;
+    padding: 30px;
+    margin: 70px;
+}
+
+#introduccion {
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.grid-calendario {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: stretch;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.caja-calendario {
+    border: 5px groove white;
+    background: radial-gradient(ellipse at top, #e33d3d, transparent),
+                radial-gradient(ellipse at bottom, #e0c434, transparent);
+    text-align: center;
+    margin: 5px;
+    line-height: 20px;
+}
+
+.caja-calendario h2 {
+    font-size: 30px;
+}
+
+.caja-calendario p {
+    font-size: 23px;
+}
+
+footer {
+    font-size: 17px;
+    margin-top: 50px;
+    background-color: rgb(182, 41, 41);
+    padding: 5px;
+    border-top: 3px solid black;
+}
+
+footer section {
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+footer a:link {
+    color: wheat;
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+
+@media (max-width:600px) and (max-width:700px) {
+    header {
+        flex-direction: column;
+        display:inline-block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    nav {
+        padding: 10px 0px;
+        margin-left: 20px;
+        justify-content: center;
+    } 
+
+    .banner-texto {
+        font-size: 42px ;
+    }
+
+    footer section {
+        float: none;
+    }
+}
+
+@media (max-width:1000px) {
+    header {
+        flex-direction: column;
+        display:inline-block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo {
+        border: none;
+    }
+
+    .grid-calendario {
+        display: inline-block;
+        padding-left: 25px;
+    }
+}
+
+
+@media (max-width:1100px)   {
+    #intro-juego, #svg, #circulo {
+        display: none;
+    }
+}

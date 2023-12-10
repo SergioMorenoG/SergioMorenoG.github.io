@@ -1,0 +1,456 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #192929;
+    color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: rgb(182, 41, 41);
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-right: 3px solid white;
+    padding-inline-end: 745px;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+} 
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a {
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:visited {
+    color: rgb(207, 180, 70)
+}
+
+nav a:active {
+    color: aqua;
+}
+
+.banner {
+    min-height: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: url(imgs-css/fondo-escuderias.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    border: 5px solid black;
+}
+
+.banner-texto {
+    color: rgb(181, 29, 29);
+    text-shadow: 10px 10px 5px white;
+    font-size: 55px;
+    padding: 30px;
+    margin: 70px;
+}
+
+#introduccion {
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+section {
+    background: linear-gradient(rgba(25, 41, 41, 0.6), rgba(25, 41, 41, 0.6)), url(imgs-css/fondo-ferrari.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed;
+    background-size: 600px 400px;
+}
+
+.articulos-izq {
+    justify-content: left;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 450px;
+    font-size: 25px;
+
+}
+
+.articulos-der {
+    justify-content: right;
+    text-align: right;
+    margin-right: 25px;
+    margin-left: 450px;
+    font-size: 25px;
+}
+
+
+
+.himnos {
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+#columna-ferrari {
+    margin-left: 20px;
+    font-size: 20px;
+    column-count:3;
+    column-gap:20px;
+    column-rule:5px dashed rgb(178, 50, 50);
+    column-gap: 50px;
+    list-style:square;
+}
+
+#columna-redbull {
+    margin-left: 20px;
+    font-size: 20px;
+    column-count:3;
+    column-gap:20px;
+    column-rule:4px double blue;
+    column-gap: 50px;
+    list-style:disc;
+}
+
+#columna-mercedes {
+    margin-left: 20px;
+    font-size: 20px;
+    column-count:3;
+    column-gap:20px;
+    column-rule:4px inset silver;
+    column-gap: 50px;
+    list-style:none;
+}
+
+#columna-mclaren {
+    margin-left: 20px;
+    font-size: 20px;
+    column-count:3;
+    column-gap:20px;
+    column-rule:4px groove rgb(236, 161, 22);
+    column-gap: 50px;
+    list-style:lower-alpha;
+}
+
+#formulario {
+    border: 5px solid white;
+    margin: 5px 100px 5px 100px;
+    background-image: none;
+    font-size: 25px;
+    background-color: rgb(146, 67, 67);
+}
+
+#titulo-form {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 6px dotted white;
+    
+}
+
+#form-primero {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    padding-left: 20px;
+    border-bottom: 5px solid white;
+    padding-bottom: 40px;
+}
+
+#form-primero label {
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+#form-primero input {
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+}
+
+#form-primero input::placeholder{
+    text-align: center;
+}
+
+#form-primero input:hover {
+    background-color: rgb(244, 236, 236);
+    cursor: pointer;
+    box-shadow: 2px 4px 5px rgb(70, 58, 58);
+}
+
+#form-segundo {
+    font-size: 30px;
+    width: 100%;
+    margin-top: 20px;
+    padding-right: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display:block;
+    padding-bottom: 60px;
+}
+
+#form-segundo input {
+    cursor: pointer;
+    size: 300px;
+}
+
+#form-segundo input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 5px #999;
+    transition: box-shadow 0.3s ease;
+}
+  
+#form-segundo input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+#form-segundo input[type='radio']:checked:before {
+    background: #c0b7b7;
+}
+
+#form-tercero {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-bottom: 60px;
+}
+
+#form-tercero input {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 5% 10%;
+    cursor: pointer;
+    size: 300px;
+}
+
+#form-cuarto {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+#form-cuarto input[type='checkbox'] {
+    appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999;
+    outline: none;
+    box-shadow: 0 0 5px #999;
+    transition: box-shadow 0.3s ease;
+    margin: 20px; 
+    margin-bottom: 0;
+}
+
+#form-cuarto input[type='checkbox']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+#form-cuarto input[type='checkbox']:checked:before {
+    background: #c0b7b7;
+}
+
+#form-quinto {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 60px;
+    border-bottom: 5px solid white;
+    
+}
+
+#form-quinto input[type="range"] {
+    width: 400px;
+}
+
+#form-sexto {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#form-sexto label {
+    padding-top: 100px;
+}
+
+textarea {
+    margin-top: 15px;
+    height: 200px;
+    width: 600px;
+    max-height: 300px;
+    max-width: 800px;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px;
+    border: 3px solid black;
+    background: linear-gradient(rgba(142, 67, 67, 0.6), rgba(146, 67, 67, 0.6)), url(imgs-css/fondo-redbull.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+}
+
+#boton-enviar {
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#boton-enviar input[type='submit'] {
+    width: 230px;
+    height: 30px;
+    border: 2px dashed black;
+    background-color: grey;
+    font-size: 20px;
+}
+
+#boton-enviar input[type='submit']:hover {
+    cursor: pointer;
+    background-color: rgb(165, 153, 153);
+}
+
+#boton-enviar input[type='submit']:active {
+    background-color: rgb(245, 238, 238);
+}
+
+footer {
+    font-size: 17px;
+    margin-top: 50px;
+    background-color: rgb(182, 41, 41);
+    padding: 5px;
+    border-top: 3px solid black;
+}
+
+footer section {
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+footer a:hover {
+    color: black;
+}
+
+@media (max-width:600px) and (max-width:700px) {
+    header {
+        flex-direction: column;
+        display:inline-block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    nav {
+        padding: 10px 0px;
+        margin-left: 20px;
+        justify-content: center;
+    } 
+
+    .banner-texto {
+        font-size: 42px ;
+    }
+
+    footer section {
+        float: none;
+    }
+}
+
+@media (max-width:1000px) {
+    header {
+        flex-direction: column;
+        display:inline-block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo {
+        border: none;
+    }
+
+    section {
+        background-size: 300px 200px;
+    }
+    .articulos-der, .articulos-izq {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .articulos-der img, .articulos-izq img {
+        width: 20%;
+    }
+
+    #form-primero {
+        margin: 0;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    #form-segundo {
+        align-content: center;
+        padding-left: 10px;
+    }
+
+    #form-segundo input {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    #form-tercero {
+        padding: 10px 0px 60px 0px;
+    }
+
+    #form-cuarto input[type='checkbox']{
+        display: flex;
+    }
+
+    #form-quinto input[type="range"] {
+        width: auto;
+    }
+
+    textarea {
+        height: auto;
+        width: auto;
+        max-height: 200px;
+        max-width: 500px;
+        font-size: 18px;
+    }
+}

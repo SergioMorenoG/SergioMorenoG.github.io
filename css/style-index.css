@@ -1,0 +1,171 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #192929;
+    color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: rgb(182, 41, 41);
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-right: 3px solid white;
+    padding-inline-end: 610px;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+} 
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a {
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:visited {
+    color: rgb(207, 180, 70)
+}
+
+nav a:active {
+    color: aqua;
+}
+
+.banner {
+    min-height: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: url(imgs-css/fondof1.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    border: 5px solid black;
+}
+
+.banner-texto {
+    color: rgb(181, 29, 29);
+    text-shadow: 10px 10px 5px white;
+    font-size: 55px;
+    padding: 30px;
+    margin: 70px;
+}
+
+#introduccion {
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.seccion1 {
+    display: flex;
+}
+
+#articulo1 {
+    padding-left: 70px;
+    text-align: left;
+    justify-content: left;
+    width: 40%;
+    border-right: 3px dashed white;
+    padding-inline-end: 200px;
+    font-size: 20px;
+    display: flex;
+}
+
+#articulo2 {
+    font-size: 20px ;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    margin-right: 20px;
+}
+
+
+footer {
+    font-size: 17px;
+    margin-top: 50px;
+    background-color: rgb(182, 41, 41);
+    padding: 5px;
+    border-top: 3px solid black;
+}
+
+footer section {
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+footer a:link {
+    color: wheat;
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+@media (max-width:600px) and (max-width:700px) {
+    header {
+        flex-direction: column;
+        display:inline-block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    nav {
+        padding: 10px 0px;
+        margin-left: 20px;
+        justify-content: center;
+    } 
+
+    .seccion1 {
+        display: inline-block;
+    }
+
+    #articulo1 {
+        border-right: none;
+        padding-inline-end: 0px;
+        padding-left: 0;
+        padding-left: 100px ;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+    }
+
+    footer section {
+        float: none;
+    }
+}
+
+@media (max-width:1000px) {
+    header {
+        flex-direction: column;
+        display:inline-block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo {
+        border: none;
+    }
+}

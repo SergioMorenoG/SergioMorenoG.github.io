@@ -1,0 +1,228 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #192929;
+    color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: rgb(182, 41, 41);
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-right: 3px solid white;
+    padding-inline-end: 798px;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+} 
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a {
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:visited {
+    color: rgb(207, 180, 70)
+}
+
+nav a:active {
+    color: aqua;
+}
+
+.banner {
+    min-height: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: url(imgs-css/fondopilotos.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    border: 5px solid black;
+}
+
+.banner-texto {
+    color: rgb(181, 29, 29);
+    text-shadow: 10px 10px 5px white;
+    font-size: 55px;
+    padding: 30px;
+    margin: 70px;
+}
+
+#introduccion {
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.articulos {
+    text-align: center;
+    background-color: rgb(34, 24, 24);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+}
+
+.articulos:hover {
+    box-shadow: 30px white;
+    background-color: rgb(61, 40, 40);
+    transition: ease-in;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgb(194, 185, 185);
+}
+
+.img-art {
+    border: 5px solid white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+.img-art:hover {
+    -webkit-transform:scale(1.3);transform:scale(1.2);
+    overflow: hidden;
+}
+
+.listas-art {
+    text-align: left;
+}
+
+section article p {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+#titulo-tabla {
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+
+#tabla-pilotos, td, th {
+    border: 3px solid rgb(182, 41, 41);
+    margin-left: 10px;
+    align-content: center;
+    text-align: center;
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+th {
+    background-color: rgb(94, 24, 24);
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+tr:nth-child(even) {
+    background-color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(46, 40, 40);
+}
+
+tr:hover {
+    background-color: brown;
+    cursor: pointer;
+    box-shadow: 7px 9px 15px black inset;
+}
+
+footer {
+    font-size: 17px;
+    margin-top: 50px;
+    background-color: rgb(182, 41, 41);
+    padding: 5px;
+    border-top: 3px solid black;
+}
+
+footer section {
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+footer a:hover {
+    color: black;
+}
+
+@media (max-width:600px) and (max-width:700px) {
+    header {
+        flex-direction: column;
+        display:inline-block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    nav {
+        padding: 10px 0px;
+        margin-left: 20px;
+        justify-content: center;
+    } 
+
+    footer section {
+        float: none;
+    }
+}
+
+@media (max-width:1000px) {
+    header {
+        flex-direction: column;
+        display:inline-block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo {
+        border: none;
+    }
+}
+
+@media (max-width:1100px) {
+    #container {
+        width: 450px;
+    }
+
+    #tabla-pilotos {
+        width: 450px;
+    }
+
+    #titulo-tabla {
+        margin-left: 10px;
+    }
+}
