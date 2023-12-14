@@ -136,11 +136,10 @@ nav a:active {
     flex-wrap: wrap;
 }
 
-
 #circulo {
     padding-left: 70px;
     padding-top: 60px;
-    transition: left 12s;
+    transition:left 6s;
 }
 
 #circulo:hover {
@@ -172,7 +171,6 @@ footer a:hover {
 }
 
 
-
 @media (max-width:600px) and (max-width:700px) {
     header {
         flex-direction: column;
@@ -183,11 +181,9 @@ footer a:hover {
 
     nav {
         padding: 10px 0px;
-        margin-left: 20px;
+        margin-left: 10px;
         justify-content: center;
     } 
-
-
 
     footer section {
         float: none;

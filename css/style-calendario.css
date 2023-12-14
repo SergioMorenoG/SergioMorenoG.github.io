@@ -54,7 +54,7 @@ nav a:active {
     display: flex;
     text-align: center;
     justify-content: center;
-    background: url(imgs-css/fondo-circutios.jpg);
+    background: url(imgs-css/fondo-calendario.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -102,6 +102,41 @@ nav a:active {
     font-size: 23px;
 }
 
+@keyframes animacion-boton {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+#divdeboton {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#botonf1 {
+    text-align: center;
+    width: 300px;
+    height: 75px;
+    border: none;
+    background-color: rgb(166, 41, 41);
+    color: white;
+    font-size: 18px;
+    border-radius: 40px;    
+    animation-name: animacion-boton;
+    animation-duration: 4s;
+}
+
+#botonf1:hover {
+    cursor: pointer;
+    background-color: rgb(217, 39, 39);
+    transition: 0.2s;
+    box-shadow: 0 0 10px whitesmoke;
+}
+
+
 footer {
     font-size: 17px;
     margin-top: 50px;
@@ -126,7 +161,6 @@ footer a:hover {
 }
 
 
-
 @media (max-width:600px) and (max-width:700px) {
     header {
         flex-direction: column;
@@ -137,7 +171,7 @@ footer a:hover {
 
     nav {
         padding: 10px 0px;
-        margin-left: 20px;
+        margin-left: 10px;
         justify-content: center;
     } 
 
@@ -160,6 +194,8 @@ footer a:hover {
 
     .logo {
         border: none;
+       border-right: none;
+        
     }
 
     .grid-calendario {

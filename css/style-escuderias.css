@@ -262,7 +262,6 @@ section {
     padding-bottom: 60px;
 }
 
-
 #form-cuarto input[type='checkbox'] {
     appearance: none;
     cursor: pointer;
@@ -371,6 +370,7 @@ footer a:hover {
     color: black;
 }
 
+
 @media (max-width:600px) and (max-width:700px) {
     header {
         flex-direction: column;
@@ -381,7 +381,7 @@ footer a:hover {
 
     nav {
         padding: 10px 0px;
-        margin-left: 20px;
+        margin-left: 10px;
         justify-content: center;
     } 
 
